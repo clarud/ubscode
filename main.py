@@ -1,6 +1,6 @@
 import json
 import math
-from collections import defaultdict
+from collections import defaultdict, OrderedDict
 
 # Returns the euclidean distance between 2 points
 def calculate_euclidean_distance(p1, p2):
@@ -9,14 +9,14 @@ def calculate_euclidean_distance(p1, p2):
 # Return score of student to school
 def calculate_weightage(student, school):
     # Calculate distance score
-    distance = calculate_euclidean_distance(student['homeLocation', school['location']])
+    distance = calculate_euclidean_distance(student['homeLocation'], school['location'])
     distance_score = 1 / (1 + distance)
 
     # Check for alumni
-    is_alumni = 1 if student.get['alumni'] == school['name'] else 0
+    is_alumni = 1 if student.get('alumni') == school['name'] else 0
 
     # Check for volunteer
-    is_volunteer = 1 if student.get['volunteer'] == school['name'] else 0
+    is_volunteer = 1 if student.get('volunteer') == school['name'] else 0
 
     score = 50 * distance_score + 30 * is_alumni + 20 * is_volunteer
     return score
@@ -32,7 +32,7 @@ def allocate_students(input_data):
     for student in input_data['students']:
         for school in input_data['schools']:
             score = calculate_weightage(student, school)
-            weightage_score.append(school['name'], student['id'], score)
+            weightage_score.append((school['name'], student['id'], score))
 
     # Sort weightage score
     weightage_score.sort(key = lambda x: (-x[2], x[1])) # Sort be descending score then ascending student id
@@ -43,7 +43,12 @@ def allocate_students(input_data):
             school_allocation[school_name].append(student_id)
             school_capacity[school_name] -= 1
 
-    output_data = [{school: students} for school, students in school_allocation.items()]
+    # Order the output to match json
+    ordered_school_allocation = OrderedDict()
+    for school in sorted(school_allocation.keys()):
+        ordered_school_allocation[school] = school_allocation[school]
+
+    output_data = [{school: students} for school, students in ordered_school_allocation.items()]
 
     return output_data
 

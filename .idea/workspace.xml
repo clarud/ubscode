@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09dd4694-cee4-4ad0-a970-5caf198a90d7" name="Changes" comment="Add method to generate score of each student to school">
+    <list default="true" id="09dd4694-cee4-4ad0-a970-5caf198a90d7" name="Changes" comment="Add method to allocate schools">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +46,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
@@ -98,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724830311151</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add method to allocate schools">
+      <option name="closed" value="true" />
+      <created>1724831129248</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724831129248</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -106,6 +116,7 @@
     <MESSAGE value="Add code to read and write JSON" />
     <MESSAGE value="Add method to calculate euclidean distance between 2 points" />
     <MESSAGE value="Add method to generate score of each student to school" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add method to generate score of each student to school" />
+    <MESSAGE value="Add method to allocate schools" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add method to allocate schools" />
   </component>
 </project>
