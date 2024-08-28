@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09dd4694-cee4-4ad0-a970-5caf198a90d7" name="Changes" comment="Add code to read and write JSON">
+    <list default="true" id="09dd4694-cee4-4ad0-a970-5caf198a90d7" name="Changes" comment="Add method to calculate euclidean distance between 2 points">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -83,12 +83,21 @@
       <option name="project" value="LOCAL" />
       <updated>1724828692490</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add method to calculate euclidean distance between 2 points">
+      <option name="closed" value="true" />
+      <created>1724829167038</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724829167038</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create main python file" />
     <MESSAGE value="Add code to read and write JSON" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add code to read and write JSON" />
+    <MESSAGE value="Add method to calculate euclidean distance between 2 points" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add method to calculate euclidean distance between 2 points" />
   </component>
 </project>
