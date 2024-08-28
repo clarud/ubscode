@@ -1,7 +1,17 @@
 import json
+import math
 
+# Returns the euclidean distance between 2 points
+def calculate_euclidean_distance(p1, p2):
+    return math.sqrt((p1[0] - p2[0]) ** 2 + (p1[1] - p2[1]) ** 2)
 
+# Define method to allocate students
+def allocate_students(input_data):
+    school_allocation = defaultdict(list)
 
+    # Calculate weightage score for each student for each school
+    weightage_score = []
+    for student in input_data['students']:
 
 # Read the input JSON
 with open('input.json', 'r') as f:
